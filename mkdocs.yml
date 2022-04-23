@@ -1,1 +1,21 @@
-site_name: My Docs
+# Настройки проекта
+site_name: githosted.ru    
+site_url: https://githosted.ru
+site_author: Vasilii Pavlov
+site_description: Create site to host documentation 
+
+# настройки репозитория
+repo_name: githostedsite
+repo_url: https://gitflic.ru/projects/githostedsite/githostedsite
+edit_url: ""
+
+# Авторские права
+copyright: 2022 https://githosted.ru
+
+# Параметры темы:
+theme: 
+   name: material
+     
+
+
+
