@@ -1,0 +1,188 @@
+```
+# Configuration
+theme:
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        changelog/insiders.md: insiders/changelog.md
+        reference/meta-tags.md: reference/index.md
+        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+        sponsorship.md: insiders/index.md
+        upgrading.md: upgrade.md
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+#  analytics:
+#    provider: google
+#    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: /style/brands/Octocat/Octocat.png
+      link: https://github.com/githostedsite.github.io
+#    - icon: fontawesome/brands/gitter
+#      link: https://gitter.im/squidfunk/mkdocs-material
+ #   - icon: fontawesome/brands/docker
+ #     link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+ #   - icon: fontawesome/brands/python
+ #     link: https://pypi.org/project/mkdocs-material/
+ #   - icon: fontawesome/brands/twitter
+ #     link: https://twitter.com/squidfunk
+
+# Extensions
+# markdown_extensions:
+ 3 - abbr
+ # - admonition
+ 3 - attr_list
+ 3 - def_list
+ # - footnotes
+ # - meta
+ # - md_in_html
+ # - toc:
+ #     permalink: true
+ 3 - pymdownx.arithmatex:
+ #     generic: true
+ # - pymdownx.betterem:
+ #     smart_enable: all
+ # - pymdownx.caret
+ # - pymdownx.details
+ # - pymdownx.emoji:
+ #     emoji_generator: !!python/name:materialx.emoji.to_svg
+ #     emoji_index: !!python/name:materialx.emoji.twemoji
+ # - pymdownx.highlight:
+ #     anchor_linenums: true
+ # - pymdownx.inlinehilite
+ # - pymdownx.keys
+ # - pymdownx.magiclink:
+ #     repo_url_shorthand: true
+ #     user: squidfunk
+ #     repo: mkdocs-material
+ # - pymdownx.mark
+ # - pymdownx.smartsymbols
+ # - pymdownx.superfences:
+ #     custom_fences:
+ #       - name: mermaid
+ #         class: mermaid
+ #         format: !!python/name:pymdownx.superfences.fence_code_format
+ #  - pymdownx.tabbed:
+ #    alternate_style: true
+ # - pymdownx.tasklist:
+ #     custom_checkbox: true
+ # - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  
+  
+  - Getting started:
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Browser support: browser-support.md
+    - Alternatives: alternatives.md
+    - License: license.md
+    - Changelog:
+      - changelog/index.md
+      - How to upgrade: upgrade.md
+  - Setup:
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up social cards: setup/setting-up-social-cards.md
+    - Setting up tags: setup/setting-up-tags.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+    - Extensions:
+      - setup/extensions/index.md
+      - Python Markdown: setup/extensions/python-markdown.md
+      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+  - Reference:
+    - reference/index.md
+    - Abbreviations: reference/abbreviations.md
+    - Admonitions: reference/admonitions.md
+    - Annotations: reference/annotations.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Icons + Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - MathJax: reference/mathjax.md
+  - Insiders:
+    - insiders/index.md
+    - Getting started:
+      - Installation: insiders/getting-started.md
+      - Changelog: insiders/changelog.md
+  - Blog:
+    - blog/index.md
+    - 2021:
+      - blog/2021/the-past-present-and-future.md
+      - blog/2021/excluding-content-from-search.md
+      - blog/2021/search-better-faster-smaller.md
+
+```
+
