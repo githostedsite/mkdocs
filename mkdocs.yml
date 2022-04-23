@@ -7,14 +7,14 @@ site_description: Create site to host documentation
 # настройки репозитория
 repo_name: githostedsite
 repo_url: https://gitflic.ru/projects/githostedsite/githostedsite
-edit_url: ""
+# edit_url: ""
 
 # Авторские права
-copyright: 2022 https://githosted.ru
+copyright: 2022 @vasili8m
 
 # Параметры темы:
 theme: 
-   name: material
+   name: null
      
 
 
