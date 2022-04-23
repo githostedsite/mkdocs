@@ -17,8 +17,8 @@ theme:
    name: null
    custom_dir: 'jswebsite-theme'
    locale: en
-   static_templates:
-      - sitemap.html
+#   static_templates:
+#     - sitemap.html
    include_sidebar: true
      
 
